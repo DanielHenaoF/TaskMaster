@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+body {
+    @apply bg-gray-100;
+  }
+
+  .custom-font {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500; 
+  }
+  
+  /* Animación de cursor parpadeante */
+/* Animación de cursor parpadeante */
+/* Animación de cursor parpadeante */
+@keyframes blink {
+  0% { opacity: 1; }
+  50% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+.animate-blink {
+  animation: blink 1s step-start infinite;
+}
+
+/* Animación de escritura */
+@keyframes typing {
+  0% { opacity: 1; }
+  50% { opacity: 0.5; }
+  100% { opacity: 1; }
+}
+
+.animate-typing {
+  animation: typing 2s ease-in-out infinite;
+}
+
+/* Estilo para la animación de alguien caminando con un celular */
+video {
+  object-fit: cover;
+}
+/* styles.css o tu archivo CSS global */
+.clip-path-curved {
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%, 0 90%, 100% 58%);
+}
+.clip-path-curveded {
+  clip-path: polygon(0 10%, 99% 0, 100% 100%, 0 100%, 0 100%, 50% 100%);
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.container {
+  position: relative;
+}
+
+button {
+  animation: fadeIn 0.5s ease-out;
+}
+
+.filter-btn {
+  padding: 0.5rem;
+  background-color: #f0f0f0;
+  border-radius: 5px;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.filter-btn:hover {
+  transform: scale(1.05);
+  background-color: #e2e8f0;
+}
+
+.filter-btn.active {
+  background-color: #81e6d9;
+  color: white;
+}
+
+.form-overlay {
+  position: absolute;
+  top: 60px;
+  left: 0;
+  right: 0;
+  background: rgba(255, 255, 255, 0.8);
+  padding: 10px;
+  border-radius: 8px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.input-field {
+  margin: 5px 0;
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+}
+
+.input-field:focus {
+  background-color: #f0f9ff;
+}
+
+.profile-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.profile-photo {
+  flex: 1;
+  max-width: 300px;
+  margin-right: 20px;
+}
+
+.profile-info {
+  flex: 2;
+  max-width: 500px;
+}
+
+@media (max-width: 768px) {
+  .profile-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .profile-photo,
+  .profile-info {
+    max-width: 100%;
+  }
+
+  .profile-info {
+    padding: 20px;
+  }
+
+  .profile-photo img {
+    max-width: 150px;
+    height: auto;
+  }
+
+  .profile-info input {
+    font-size: 0.875rem; /* 14px */
+    padding: 0.5rem;
+  }
+}
