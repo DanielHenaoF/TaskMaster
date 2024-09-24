@@ -47,11 +47,11 @@ db.sync({ alter: true })
     console.log("¡Se crea la base de datos y su tablas!");
   })
   .catch((err) =>
-    console.error("Error al crear las tablas de la base de datos:", err)
+    console.error("Error al crear base de datos y sus tablas: ", err)
   );
 
 // Iniciar el servidor
 const PORT = process.env.PORT || 3001;
 app.listen(PORT, () => {
-  console.log(`localhost ${PORT}`);
+  console.log(`localhost: ${PORT}`);
 });
