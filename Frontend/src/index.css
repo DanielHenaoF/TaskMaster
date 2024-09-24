@@ -5,21 +5,29 @@
 
 
 body {
-    @apply bg-gray-100;
-  }
+  @apply bg-gray-100;
+}
 
-  .custom-font {
-    font-family: 'Roboto', sans-serif;
-    font-weight: 500; 
-  }
-  
-  /* Animación de cursor parpadeante */
+.custom-font {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+}
+
+/* Animación de cursor parpadeante */
 /* Animación de cursor parpadeante */
 /* Animación de cursor parpadeante */
 @keyframes blink {
-  0% { opacity: 1; }
-  50% { opacity: 0; }
-  100% { opacity: 1; }
+  0% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
 }
 
 .animate-blink {
@@ -28,9 +36,17 @@ body {
 
 /* Animación de escritura */
 @keyframes typing {
-  0% { opacity: 1; }
-  50% { opacity: 0.5; }
-  100% { opacity: 1; }
+  0% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0.5;
+  }
+
+  100% {
+    opacity: 1;
+  }
 }
 
 .animate-typing {
@@ -41,10 +57,12 @@ body {
 video {
   object-fit: cover;
 }
+
 /* styles.css o tu archivo CSS global */
 .clip-path-curved {
   clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%, 0 90%, 100% 58%);
 }
+
 .clip-path-curveded {
   clip-path: polygon(0 10%, 99% 0, 100% 100%, 0 100%, 0 100%, 50% 100%);
 }
@@ -53,6 +71,7 @@ video {
   from {
     opacity: 0;
   }
+
   to {
     opacity: 1;
   }
@@ -133,7 +152,7 @@ button {
     flex-direction: column;
     align-items: center;
   }
-  
+
   .profile-photo,
   .profile-info {
     max-width: 100%;
@@ -149,7 +168,8 @@ button {
   }
 
   .profile-info input {
-    font-size: 0.875rem; /* 14px */
+    font-size: 0.875rem;
+    /* 14px */
     padding: 0.5rem;
   }
 }
