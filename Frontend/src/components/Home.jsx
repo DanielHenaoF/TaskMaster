@@ -20,7 +20,7 @@ const Home = () => {
       const token = localStorage.getItem('token');
       if (!token) throw new Error('Token not found. Please log in again.');
 
-      const response = await fetch('https://taskmaster-auw7.onrender.com', {
+      const response = await fetch('https://maestrodetareas.onrender.com', {
         method: 'GET',
         headers: {
           Authorization: `Bearer ${token}`,
@@ -50,7 +50,7 @@ const Home = () => {
         const token = localStorage.getItem('token');
         if (!token) throw new Error('Token not found. Please log in again.');
 
-        const response = await fetch('https://taskmaster-auw7.onrender.com', {
+        const response = await fetch('https://maestrodetareas.onrender.com', {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json',
@@ -80,7 +80,7 @@ const Home = () => {
         const token = localStorage.getItem('token');
         if (!token) throw new Error('Token not found. Please log in again.');
 
-        const response = await fetch(`https://taskmaster-auw7.onrender.com${editTask.id}`, {
+        const response = await fetch(`https://maestrodetareas.onrender.com${editTask.id}`, {
           method: 'PUT',
           headers: {
             'Content-Type': 'application/json',
@@ -109,7 +109,7 @@ const Home = () => {
       const token = localStorage.getItem('token');
       if (!token) throw new Error('Token not found. Please log in again.');
 
-      const response = await fetch(`https://taskmaster-auw7.onrender.com${taskId}`, {
+      const response = await fetch(`https://maestrodetareas.onrender.com${taskId}`, {
         method: 'PUT',
         headers: {
           'Content-Type': 'application/json',
@@ -135,7 +135,7 @@ const Home = () => {
       const token = localStorage.getItem('token');
       if (!token) throw new Error('Token not found. Please log in again.');
 
-      const response = await fetch(`https://taskmaster-auw7.onrender.com${taskId}`, {
+      const response = await fetch(`https://maestrodetareas.onrender.com${taskId}`, {
         method: 'DELETE',
         headers: {
           Authorization: `Bearer ${token}`,

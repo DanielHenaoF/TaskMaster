@@ -23,7 +23,7 @@ const RegisterPage = () => {
     setError('');
 
     try {
-      const response = await fetch('https://taskmaster-auw7.onrender.com', {
+      const response = await fetch('https://maestrodetareas.onrender.com', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
