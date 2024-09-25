@@ -203,7 +203,7 @@ router.post("/reset-password", async (req, res) => {
     );
 
     console.log("Contraseña restablecida exitosamente");
-    res.redirect("https://task-master-eight-cyan.vercel.app");
+    res.redirect("https://task-master-eight-cyan.vercel.app/");
   } catch (error) {
     console.error("Error al restablecer la contraseña:", error);
     res.status(500).json({ message: "Error al restablecer la contraseña" });
