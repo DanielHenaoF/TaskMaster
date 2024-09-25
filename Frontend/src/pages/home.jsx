@@ -32,7 +32,7 @@ const TaskManagementPage = () => {
 
   return (
     <div className="flex flex-col h-screen bg-gradient-to-r from-indigo-100 to-indigo-100 md:flex-row">
-      <aside className="bg-indigo-700 text-white flex flex-col items-center p-4 w-20 shadow-md md:w-20 md:flex-none hidden md:flex">
+      <aside className="bg-indigo-700 text-white flex flex-col items-center p-4 w-20 shadow-md md:w-20 md:flex-none md:flex">
         <nav className="space-y-4">
           <Tooltip content="" placement="right">
             <button
