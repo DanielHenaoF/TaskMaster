@@ -66,7 +66,7 @@ const TaskManagementPage = () => {
               className="bg-green-500 text-white p-3 rounded-full hover:bg-green-600 transition-colors duration-200"
               onClick={() => navigate('/')}
             >
-              <span>Login</span>
+              <span>Iniciar sesión</span>
             </button>
           )}
         </div>
