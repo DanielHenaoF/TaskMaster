@@ -18,7 +18,7 @@
     "username": "root",
     "password": "QzimyZS4FEmnw2uwb0UQGU0KksAm4N5O",
     "database": "taskmaster_ugho",
-    "host": "dpg-crplset6l47c73ald740-a",
+    "host": "0.0.0.0",
     "port": 5432,
     "dialect": "postgres"
   }
