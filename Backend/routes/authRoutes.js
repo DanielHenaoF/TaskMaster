@@ -203,7 +203,7 @@ router.post("/reset-password", async (req, res) => {
     );
 
     console.log("Contraseña restablecida exitosamente");
-    res.redirect("https://taskmaster-lime.vercel.app");
+    res.redirect("http://localhost:5173");
   } catch (error) {
     console.error("Error al restablecer la contraseña:", error);
     res.status(500).json({ message: "Error al restablecer la contraseña" });
