@@ -23,7 +23,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 // Configurar CORS
 app.use(
   cors({
-    origin: ["http://localhost:5173"],
+    origin: ["https://taskmaster-flax-nu.vercel.app"],
     methods: ["GET", "POST", "PUT", "DELETE"],
     allowedHeaders: ["Content-Type", "Authorization"],
     credentials: true,
