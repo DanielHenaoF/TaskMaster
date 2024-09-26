@@ -3,7 +3,7 @@ const { Sequelize } = require("sequelize");
 
 // Usando DB_URI para la conexión
 const sequelize = new Sequelize(process.env.DB_URI, {
-  dialect: "postgresql",
+  dialect: "mysql",
   logging: console.log,
 });
 
