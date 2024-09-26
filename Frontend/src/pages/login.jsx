@@ -18,7 +18,7 @@ const LoginPage = () => {
     setIsLoggingIn(true);
 
     try {
-      const response = await fetch('https://taskmaster-cfkw.onrender.com', {
+      const response = await fetch('https://taskmaster-cfkw.onrender.com/api/auth/login', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -52,7 +52,7 @@ const LoginPage = () => {
 
   const handleResetPassword = async () => {
     try {
-      const response = await fetch('https://taskmaster-cfkw.onrender.com', {
+      const response = await fetch('https://taskmaster-cfkw.onrender.com/api/auth/request-reset', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

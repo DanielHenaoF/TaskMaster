@@ -83,7 +83,7 @@ exports.requestPasswordReset = async (req, res) => {
       { where: { id: user.id } }
     );
 
-    const resetUrl = `https://taskmaster-flax-nu.vercel.app${resetToken}`;
+    const resetUrl = `https://localhost:5173/api/auth/reset-password/${resetToken}`;
 
     await transporter.sendMail({
       to: email,

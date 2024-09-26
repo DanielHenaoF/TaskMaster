@@ -23,7 +23,7 @@ const RegisterPage = () => {
     setError('');
 
     try {
-      const response = await fetch('https://taskmaster-cfkw.onrender.com', {
+      const response = await fetch('https://taskmaster-cfkw.onrender.com/api/auth/register', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

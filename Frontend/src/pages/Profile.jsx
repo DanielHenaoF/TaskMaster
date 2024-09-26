@@ -27,7 +27,7 @@ const Profile = () => {
           return;
         }
 
-        const response = await fetch('https://taskmaster-cfkw.onrender.com', {
+        const response = await fetch('https://taskmaster-cfkw.onrender.com/api/auth/profile', {
           method: 'GET',
           headers: {
             Authorization: `Bearer ${token}`,
@@ -100,7 +100,7 @@ const Profile = () => {
     try {
       const token = localStorage.getItem('token');
       console.log('Datos enviados al servidor:', formData); // Verificar los datos antes de enviar
-      const response = await fetch('https://taskmaster-cfkw.onrender.com', {
+      const response = await fetch('https://taskmaster-cfkw.onrender.com/api/auth/update', {
         method: 'PUT',
         headers: {
           Authorization: `Bearer ${token}`,
