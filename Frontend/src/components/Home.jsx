@@ -20,7 +20,7 @@ const Home = () => {
       const token = localStorage.getItem('token');
       if (!token) throw new Error('Token not found. Please log in again.');
 
-      const response = await fetch('http://localhost:3001/api/auth/getTasks', {
+      const response = await fetch('https://taskmaster-cfkw.onrender.com', {
         method: 'GET',
         headers: {
           Authorization: `Bearer ${token}`,
@@ -50,7 +50,7 @@ const Home = () => {
         const token = localStorage.getItem('token');
         if (!token) throw new Error('Token not found. Please log in again.');
 
-        const response = await fetch('http://localhost:3001/api/auth/tasks', {
+        const response = await fetch('https://taskmaster-cfkw.onrender.com', {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json',
@@ -80,7 +80,7 @@ const Home = () => {
         const token = localStorage.getItem('token');
         if (!token) throw new Error('Token not found. Please log in again.');
 
-        const response = await fetch(`http://localhost:3001/api/auth/tasks/${editTask.id}`, {
+        const response = await fetch(`https://taskmaster-cfkw.onrender.com${editTask.id}`, {
           method: 'PUT',
           headers: {
             'Content-Type': 'application/json',
@@ -109,7 +109,7 @@ const Home = () => {
       const token = localStorage.getItem('token');
       if (!token) throw new Error('Token not found. Please log in again.');
 
-      const response = await fetch(`http://localhost:3001/api/auth/tasks/${taskId}`, {
+      const response = await fetch(`https://taskmaster-cfkw.onrender.com${taskId}`, {
         method: 'PUT',
         headers: {
           'Content-Type': 'application/json',
@@ -135,7 +135,7 @@ const Home = () => {
       const token = localStorage.getItem('token');
       if (!token) throw new Error('Token not found. Please log in again.');
 
-      const response = await fetch(`http://localhost:3001/api/auth/tasks/${taskId}`, {
+      const response = await fetch(`https://taskmaster-cfkw.onrender.com${taskId}`, {
         method: 'DELETE',
         headers: {
           Authorization: `Bearer ${token}`,
