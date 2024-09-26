@@ -111,7 +111,7 @@ const LoginPage = () => {
           >
             <div>
               <h2 className="text-xl font-semibold text-gray-800">Recuperar Contraseña</h2>
-              {error && <p className="text-red-500">{error}</p>}
+              {/* {error && <p className="text-red-500">{error}</p>} */}
               <div className="mt-2">
                 <label htmlFor="resetEmail" className="block text-sm font-medium text-gray-700">Correo Electrónico</label>
                 <input
