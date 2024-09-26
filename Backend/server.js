@@ -23,7 +23,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 // Configurar CORS
 app.use(
   cors({
-    origin: ["https://task-master-eight-cyan.vercel.app"],
+    origin: ["https://taskmaster-lime.vercel.app"],
     methods: ["GET", "POST", "PUT", "DELETE"],
     allowedHeaders: ["Content-Type", "Authorization"],
     credentials: true,
