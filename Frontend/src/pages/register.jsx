@@ -35,7 +35,6 @@ const RegisterPage = () => {
         const errorData = await response.json();
         throw new Error(errorData.message || 'Registration failed.');
       }
-
       navigate('/');
     } catch (err) {
       setError(err.message);
