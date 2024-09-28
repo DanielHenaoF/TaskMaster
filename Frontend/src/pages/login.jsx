@@ -18,7 +18,7 @@ const LoginPage = () => {
     setIsLoggingIn(true);
 
     try {
-      const response = await fetch('https://taskmaster-cfkw.onrender.com/api/auth/login', {
+      const response = await fetch(`https://taskmaster-cfkw.onrender.com/api/auth/login`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
